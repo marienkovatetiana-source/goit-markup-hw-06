@@ -1,11 +1,7 @@
-.team {
+.team-section {
   background-color: #f4f4fd;
+  padding: 96px 0;
 }
-
-.section {
-  padding: 120px 0;
-}
-
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -17,11 +13,15 @@
 
 .team-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 264px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 72px;
 }
-
 .team-item {
-  width: calc((100% - 24px * 3) / 4);
+  width: 264px;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   overflow: hidden;
@@ -30,16 +30,13 @@
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
 .team-item img {
   display: block;
 }
-
 .team-item-content {
   padding: 32px 16px;
   text-align: center;
 }
-
 .team-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -49,7 +46,6 @@
   text-align: center;
   margin-bottom: 8px;
 }
-
 .team-item-position {
   font-weight: 400;
   font-size: 16px;
@@ -59,12 +55,13 @@
   text-align: center;
   margin-bottom: 8px;
 }
-.social-icons {
+
+.team-item-content .social-icons {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-.social-item-icon {
+.team-item-content .social-item-icon {
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
@@ -74,12 +71,28 @@
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social-item-icon:hover,
 .social-item-icon:focus {
   background-color: #404bbf;
 }
 
 .team-item-icon {
-  fill: #f4f4fd;
+  color: #f4f4fd;
+}
+
+@media (min-width: 768px) {
+  .team-section {
+    padding: 120px 0;
+  }
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+    max-width: 736px;
+  }
+}
+@media (min-width: 1158px) {
+  .team-list {
+    gap: 24px;
+    max-width: 1158px;
+  }
 }

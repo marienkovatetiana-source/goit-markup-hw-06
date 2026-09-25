@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.hide {
+  display: none !important;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -41,14 +49,26 @@ h6,
 p {
   margin: 0;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .container {
-  max-width: 1158px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
