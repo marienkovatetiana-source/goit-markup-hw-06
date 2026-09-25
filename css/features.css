@@ -32,9 +32,14 @@
 @media (min-width: 768px) {
   .features-list {
     column-gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .features-item {
     width: calc((100% - 24px) / 2);
+  }
+  .features-item-title {
+    text-align: left;
   }
 }
 @media (min-width: 1158px) {
