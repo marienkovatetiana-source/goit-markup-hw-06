@@ -145,6 +145,7 @@
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
+
     align-items: flex-start;
     text-align: left;
     row-gap: 72px;
@@ -171,6 +172,7 @@
   .footer-container {
     flex-wrap: nowrap;
     align-items: flex-start;
+    column-gap: 0;
   }
   .footer-info {
     margin-right: 120px;
