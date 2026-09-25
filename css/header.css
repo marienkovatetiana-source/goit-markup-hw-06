@@ -6,7 +6,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  margin-right: 120px;
   padding: 16px 0;
 }
 
@@ -23,6 +22,7 @@
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-contact-item {
   font-weight: 400;
@@ -90,6 +90,9 @@
   .header {
     border-bottom: 1px solid #e7e9fc;
   }
+  .logo {
+    margin-right: 120px;
+  }
   .header-nav {
     display: flex;
   }
@@ -102,6 +105,10 @@
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .header-nav-link,
+  .header-contact-item a {
+    padding: 24px 0;
   }
   .header-nav-list {
     display: flex;
@@ -125,6 +132,9 @@
   }
 
   @media (min-width: 1158px) {
+    .logo {
+      margin-right: 76px;
+    }
     .header-contact-item {
       font-size: 16px;
       line-height: 1.5;
@@ -134,10 +144,7 @@
       display: flex;
       gap: 40px;
     }
-    .header-nav-link,
-    .header-contact-item a {
-      padding: 24px 0;
-    }
+
     .header-nav {
       margin-right: 0px;
     }

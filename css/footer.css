@@ -17,6 +17,7 @@
   color: #4d5ae5;
 }
 .footer-text {
+  text-align: left;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -60,6 +61,8 @@
 .footer-subscribe {
   display: flex;
   flex-direction: column;
+  max-width: 288px;
+  width: 100%;
 }
 .footer-subscribe-title {
   font-weight: 500;
@@ -74,12 +77,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   gap: 16px;
 }
 .footer-subscribe-input {
   box-sizing: border-box;
-  width: 288px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   background-color: transparent;
@@ -140,6 +144,7 @@
   }
   .footer-container {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     text-align: left;
     row-gap: 72px;

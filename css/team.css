@@ -81,16 +81,15 @@
 }
 
 @media (min-width: 768px) {
-  .team-section {
-    padding: 120px 0;
-  }
   .team-list {
     row-gap: 64px;
     column-gap: 24px;
-    max-width: 736px;
   }
 }
 @media (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
   .team-list {
     gap: 24px;
     max-width: 1158px;

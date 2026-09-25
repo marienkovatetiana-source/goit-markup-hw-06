@@ -3,18 +3,17 @@
 }
 .features-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   gap: 72px;
 }
 .features-item {
   width: 100%;
-  max-width: 320px;
 }
 .features-icon-wrapper {
   display: none;
 }
 .features-item-title {
+  text-align: center;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 36px;
