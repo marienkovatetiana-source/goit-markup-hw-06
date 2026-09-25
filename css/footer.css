@@ -150,6 +150,7 @@
     text-align: left;
     row-gap: 72px;
     column-gap: 24px;
+    padding: 0 108px;
   }
 
   .footer-subscribe-form {
