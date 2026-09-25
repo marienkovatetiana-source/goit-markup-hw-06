@@ -4,6 +4,7 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 .features-item {
@@ -31,8 +32,6 @@
 
 @media (min-width: 768px) {
   .features-list {
-    display: flex;
-    justify-content: center;
     column-gap: 24px;
   }
   .features-item {
